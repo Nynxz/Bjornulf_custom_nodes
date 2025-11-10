@@ -25,8 +25,8 @@ import subprocess
 
 def get_civitai_base_paths():
     """Returns common paths for CivitAI integration"""
-    custom_nodes_dir = Path(__file__).parent.parent.parent.parent
-    civitai_base_path = custom_nodes_dir / "ComfyUI" / "custom_nodes" / "Bjornulf_custom_nodes" / "civitai"
+    custom_nodes_dir = Path(__file__).parent.parent.parent
+    civitai_base_path = custom_nodes_dir /  "custom_nodes" / "Bjornulf_custom_nodes" / "civitai"
     return custom_nodes_dir, civitai_base_path, civitai_base_path  # Last one is parsed_models_path
 
 def setup_checkpoint_directory(model_type):
